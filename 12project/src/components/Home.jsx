@@ -35,13 +35,21 @@ const Home = () => {
         <div>
           <h1>Who we are?</h1>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto
-            sequi quibusdam beatae architecto ea laboriosam delectus nihil quis
-            quo explicabo aspernatur, dolores velit perspiciatis quaerat
-            deserunt? Nihil nam sequi incidunt? Lorem, ipsum dolor sit amet
-            consectetur adipisicing elit. Ratione nisi dicta, magni explicabo
-            excepturi quas. Ipsa quod minima omnis sequi cumque possimus
-            repellendus, alias asperiores molestiae ipsum quaerat iure laborum?
+            Welcome to TechyStar, your premier destination for cutting-edge
+            technology solutions and unparalleled service. Formerly known as
+            Techie, TechyStar embodies a new era of innovation and excellence in
+            the tech service industry. At TechyStar, we bring a fresh
+            perspective to technology, combining expertise with a
+            customer-centric approach. Our team of dedicated professionals is
+            committed to delivering top-notch solutions that empower businesses
+            to thrive in the digital age. With a focus on adaptability and
+            forward thinking, TechyStar is your go-to partner for navigating the
+            ever-evolving technological landscape. As TechyStar, we continue to
+            uphold the values that have defined our legacy, while embracing a
+            renewed commitment to innovation, reliability, and client
+            satisfaction. Whether you're a startup charting new territories or
+            an established enterprise seeking to elevate your tech capabilities,
+            TechyStar is here to guide you on your journey to success.
           </p>
         </div>
       </div>

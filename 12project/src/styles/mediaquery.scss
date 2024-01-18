@@ -1,0 +1,38 @@
+@import "colors";
+
+@media screen and (max-width: 820px) {
+  .home3 {
+    height: 150vh;
+    > div {
+      height: 140vh;
+    }
+  }
+  .contact {
+    > main {
+      width: 120vh;
+      height: 100vh;
+      border-radius: 0;
+      > h1 {
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .home3 {
+    height: 220vh;
+    > div {
+      height: 200vh;
+    }
+  }
+  .contact {
+    > main {
+      width: 100vh;
+      border-radius: 0;
+      > div {
+        width: 100%;
+      }
+    }
+  }
+}
