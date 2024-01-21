@@ -23,6 +23,7 @@ const Header = () => {
       <Button
         position={"fixed"}
         top={"4"}
+        zIndex={"overlay"}
         left={"4"}
         colorScheme="purple"
         p={"0"}
