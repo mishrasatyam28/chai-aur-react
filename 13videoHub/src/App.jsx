@@ -6,6 +6,8 @@ import Home from "./components/Home.jsx";
 import { Footer } from "./components/Footer.jsx";
 import Videos from "./components/Videos.jsx";
 import Upload from "./components/Upload.jsx";
+import Login from "./components/Login.jsx";
+import SignUp from "./components/SignUp.jsx";
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/videos" element={<Videos />} />
         <Route path="/upload" element={<Upload />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<SignUp />} />
       </Routes>
       <Footer />
     </Router>
