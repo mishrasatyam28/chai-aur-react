@@ -1,8 +1,9 @@
 import { useState } from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 function App() {
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
+  // const { coins } = useSelector((state) => state.first);
 
   const handler = () => {
     dispatch({
@@ -10,10 +11,33 @@ function App() {
       payload: ["BTC", "ETH", "SHIB"],
     });
   };
+  const { counter } = useSelector((state) => state.first);
+  const dispatch = useDispatch();
+
+  const Add = () => {
+    dispatch({
+      type: "incrementCase",
+    });
+  };
+  const Sub = () => {
+    dispatch({
+      type: "decrementCase",
+    });
+  };
 
   return (
-    <div>
-      <button onClick={handler}>Click</button>
+    <div style={{ display: "flex", gap: "50px" }}>
+      {/* <button onClick={handler}>Click</button>
+      <h1>{coins[0]}</h1> */}
+      <div>
+        <button onClick={Add}>+</button>
+      </div>
+      <div>
+        <p>{counter}</p>
+      </div>
+      <div>
+        <button onClick={Sub}>-</button>
+      </div>
     </div>
   );
 }
