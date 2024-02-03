@@ -9,7 +9,7 @@
 
 .productCard {
   background-color: $tertiary;
-  width: 200px;
+  width: 300px;
   display: flex;
   flex-direction: column;
   margin: 2rem;
@@ -22,6 +22,10 @@
   }
   h4 {
     margin: 1rem;
+    align-self: center;
+  }
+  p {
+    align-self: center;
   }
   button {
     cursor: pointer;
