@@ -14,11 +14,12 @@ const Cart = () => {
         {cartItems.length > 0 ? (
           cartItems.map((i) => (
             <CartItem
-              imgSrc={img1}
-              name={"Mac Book"}
-              price={120000}
-              qty={1}
-              id={"snABb"}
+              imgSrc={i.imgSrc}
+              name={i.name}
+              price={i.price}
+              qty={i.quantity}
+              id={i.id}
+              key={i.id}
             />
           ))
         ) : (

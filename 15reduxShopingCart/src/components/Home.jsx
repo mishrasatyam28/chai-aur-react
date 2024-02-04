@@ -1,5 +1,6 @@
 import React from "react";
 import toast, { Toaster } from "react-hot-toast";
+import { useDispatch } from "react-redux";
 
 const img1 =
   "https://www.reliancedigital.in/medias/Apple-MGN63HNA-Laptops-491946461-i-1-1200Wx1200H?context=bWFzdGVyfGltYWdlc3wxNzczNDJ8aW1hZ2UvanBlZ3xpbWFnZXMvaDVhL2gyZC85NDQzMDgzNTgzNTE4LmpwZ3xhYzRiNWIxZGQ2NjNiNWIyYjI0Y2ZkYTZlZWQ3MTFjZTMxYzVmNDBiNmM5Mzk5OTM2OGVkZmExMjMyYjIxNDQ4";
@@ -92,9 +93,15 @@ const Home = () => {
     },
   ];
 
+  const dispatch = useDispatch();
+
   const addToCartHandler = (options) => {
-    console.log(options);
+    // console.log(options);
     toast.success("Added to Cart");
+    dispatch({
+      type: "addToCart",
+      paylaod: options,
+    });
   };
 
   return (
